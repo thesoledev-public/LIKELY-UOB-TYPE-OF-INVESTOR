@@ -1,0 +1,285 @@
+{
+  "question": [
+    {
+      "key": "1",
+      "question": "How would your friends describe you?",
+      "icon":"images/questions/q1_buddy.svg",
+      "image":"images/questions/q1_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "Grounded and stable - I’m definitely the least problematic in our group!"
+        },
+        {
+          "score": "2",
+          "value": "I’m their go-to friend - they know I’m always there for them!"
+        },
+        {
+          "score": "3",
+          "value": "I have tried every bubble tea in Singapore!"
+        },
+        {
+          "score": "4",
+          "value": "Interesting - always up to date with the latest news and events!"
+        },
+        {
+          "score": "5",
+          "value": "Ambitious and determined - I have to-do lists to achieve all my goals!"
+        }                                
+        
+      ]
+    },
+    {
+      "key": "2",
+      "question": "When you travel, how do you plan your holidays?",
+      "icon":"images/questions/q2_buddy.svg",
+      "image":"images/questions/q2_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "What holiday? I’d rather buy something tangible or save that money."
+        },
+        {
+          "score": "2",
+          "value": "Staycations only! No planning. No hassles. And it’s easy on the budget."
+        },
+        {
+          "score": "3",
+          "value": "Me, planning? I leave all that with my travel buddies or have the travel agency do all the planning!"
+        },
+        {
+          "score": "4",
+          "value": "I research places that interest me - I don’t mind going on my own if others don’t want to!"
+        },
+        {
+          "score": "5",
+          "value": "Traveling is about new experiences, so all my trips must include a new experience. "
+        }                                
+      ]
+    },
+    {
+      "key": "3",
+      "question": "Time for a beach holiday with friends! How are you spending it?",
+      "icon":"images/questions/q3_buddy.svg",
+      "image":"images/questions/q3_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "I’m making the most of my hotel room! Getting a tan would be disastrous as I have nothing in my wardrobe that suits a tan."
+        },
+        {
+          "score": "2",
+          "value": "I’m staying on the beach, reading a book, and ordering my favourite piña colada."
+        },
+        {
+          "score": "3",
+          "value": "See where my friends go and just tag along wherever!"
+        },
+        {
+          "score": "4",
+          "value": "I’ve got my itinerary all planned out. See you later!"
+        },
+        {
+          "score": "5",
+          "value": "Wow, I’ve never tried Jet Blading! C’mon everybody follow me!"
+        }                                
+      ]
+    },
+    {
+      "key": "4",
+      "question": "You go to a café, and see a new flavour on the menu: Mala Coffee. Your usual is still on the menu. What will you order?",
+      "icon":"images/questions/q4_buddy.svg",
+      "image":"images/questions/q4_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "Just my usual Long Black coffee - what else? Better safe than sorry!"
+        },
+        {
+          "score": "2",
+          "value": "The usual - but do I want it hot or cold? Should I get cake? Maybe not…"
+        },
+        {
+          "score": "3",
+          "value": "Whatever I feel like at the moment - but I’ll get my friend to try out the new flavour!"
+        },
+        {
+          "score": "4",
+          "value": "Obviously the Mala Coffee! New is always more interesting."
+        },
+        {
+          "score": "5",
+          "value": "One sec. Let me check the reviews on social media."
+        }                                
+      ]
+    },
+    {
+      "key": "5",
+      "question": "It’s Friday night, it’s your turn to pick a dinner place with your friends!",
+      "icon":"images/questions/q5_buddy.svg",
+      "image":"images/questions/q5_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "Cozy at-home dinner - we can do pot luck or get takeaways!"
+        },
+        {
+          "score": "2",
+          "value": "Everybody loved the last restaurant we went to - so let’s go there again!"
+        },
+        {
+          "score": "3",
+          "value": "Ask my colleagues for recommendations - they’ll know better than Google!"
+        },
+        {
+          "score": "4",
+          "value": "I already booked the new restaurant in town – it’s one in my wishlist of restaurants we need to try!"
+        },
+        {
+          "score": "5",
+          "value": "Ever tried dining in the dark or molecular cuisines? I’ll make the reservations."
+        }                                
+      ]
+    },
+    {
+      "key": "6",
+      "question": "What’s your ideal mode of transport?",
+      "icon":"images/questions/q6_buddy.svg",
+      "image":"images/questions/q6_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "Walking or biking if it’s very near, buses or trains if it’s a distance away."
+        },
+        {
+          "score": "2",
+          "value": "Buses and trains - they’re so reliable!"
+        },
+        {
+          "score": "3",
+          "value": "Everybody takes Grab these days!"
+        },
+        {
+          "score": "4",
+          "value": "It depends on what makes sense at the time - I don’t mind walking, public transport, or Grab."
+        },
+        {
+          "score": "5",
+          "value": "A car is so much more efficient to get around!"
+        }                                
+      ]
+    },
+    {
+      "key": "7",
+      "question": "Oh no! Your phone shattered on the sidewalk. Time to buy a new one. Which sounds most like you?",
+      "icon":"images/questions/q7_buddy.svg",
+      "image":"images/questions/q7_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "Checking with my family who has an extra phone while I research the best phone in the market."
+        },
+        {
+          "score": "2",
+          "value": "I’ll just get the exact same one - no stress!"
+        },
+        {
+          "score": "3",
+          "value": "There’s this new model that everybody wants - so I want it too!"
+        },
+        {
+          "score": "4",
+          "value": "I need to do more research - but definitely not going for the obvious choices."
+        },
+        {
+          "score": "5",
+          "value": "Last year's model is cheaper and I can get a $100 credit for my broken phone. Sold."
+        }                                
+      ]
+    },
+    {
+      "key": "8",
+      "question": "Your boss just gave you the day off (paid!). How will you spend it?",
+      "icon":"images/questions/q8_buddy.svg",
+      "image":"images/questions/q8_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "At home - catching up on all my Netflix and Youtube shows."
+        },
+        {
+          "score": "2",
+          "value": "Resetting. Yoga and a walk in the park should do the trick."
+        },
+        {
+          "score": "3",
+          "value": "Meeting up with my friends - different ones for breakfast, lunch, and dinner!"
+        },
+        {
+          "score": "4",
+          "value": "Attending an event, visiting that exhibit I always wanted to, and just enjoying me-time."
+        },
+        {
+          "score": "5",
+          "value": "I’ve got quite a lot of errands - so I need to check them off my list!"
+        }                                
+      ]
+    },  
+    {
+      "key": "9",
+      "question": "When it comes to investing money, which of these are you most likely to do?",
+      "icon":"images/questions/q9_buddy.svg",
+      "image":"images/questions/q9_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "Investing? I don’t know… I’m quite happy growing my savings account."
+        },
+        {
+          "score": "2",
+          "value": "Keep my money in low-risk asset with slow but steady growth."
+        },
+        {
+          "score": "3",
+          "value": "Take the advice of my friends or see what investment strategies are trending…"
+        },
+        {
+          "score": "4",
+          "value": "Do a lot of research, cross-reference sources, and create a solid plan for my own needs."
+        },
+        {
+          "score": "5",
+          "value": "Research and buy undervalued investments that has great potential in the future that no one else is talking about yet."
+        }                                
+      ]
+    },  
+    {
+      "key": "10",
+      "question": "[Time Horizon] How quickly do you want to see results from your investments?",
+      "icon":"images/questions/q10_buddy.svg",
+      "image":"images/questions/q10_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "Hopefully as soon as possible… otherwise I’ll get very stressed!"
+        },
+        {
+          "score": "2",
+          "value": "I would only put a small amount in secure funds, so perhaps 1-3 years?"
+        },
+        {
+          "score": "3",
+          "value": "I’m not sure - my friends have all had different results!"
+        },
+        {
+          "score": "4",
+          "value": "It depends on how my plan plays out - I should be covered either way."
+        },
+        {
+          "score": "5",
+          "value": "It doesn’t matter much - I’m in this for the long term!"
+        }                                
+      ]
+    }                           
+  ]
+}
