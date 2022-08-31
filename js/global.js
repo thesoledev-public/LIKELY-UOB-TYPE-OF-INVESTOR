@@ -24,15 +24,21 @@ $(document).on('click', '.trigger-nav', function() {
 });
 
 $(document).on('click', '.item-trigger', function() {
+    $('.item-trigger').removeClass('active');
+    $(this).addClass('active');
     $('.mob-nav-item > .item-content').removeClass('active');
     $(this).parents('.mob-nav-item').find('.item-content').toggleClass('active');
 });
+
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
 
 function generateQuestions(){
     $.getJSON('json/questions.json', function(data) {  
         total_no_of_question = data.question.length;
         current_question_no = 1;
-        console.log(data.question.length);
+        //console.log(data.question.length);
         var arr_str = [];
         $.each(data.question, function(i, val) {
 
@@ -44,15 +50,18 @@ function generateQuestions(){
                     arr_str.push('Questions');
                     arr_str.push('<p class="text-question">'+ val.question +'</p>');
                     arr_str.push('</div>');
-                    arr_str.push('<div class="col-4 text-end d-flex align-items-center justify-content-end">');
-                    arr_str.push('<img src="images/questions/q'+ q_id +'_buddy.svg" class="img-fluid">');
+                    arr_str.push('<div class="col-4 text-end d-flex align-items-center justify-content-end question-icon">');
+                    arr_str.push('<img src="images/questions/q'+ q_id +'_buddy.png" class="img-fluid">');
                     arr_str.push('</div>');
                 arr_str.push('</div> ');
                 arr_str.push('<hr />');
                 arr_str.push('<div class="row mt-4">');
                     arr_str.push('<div class="col">');
                     arr_str.push('<ul class="questions-answers-selection">');
-                    $.each(val.answers, function(a_i, a_val) {
+
+
+                    const shuffled_answers = val.answers.sort(() => Math.random() - 0.5);
+                    $.each(shuffled_answers, function(a_i, a_val) {
                         arr_str.push('<li>');
                         arr_str.push('<div class="form-check">');
                             arr_str.push('<input class="form-check-input trigger-answer" type="radio" name="q'+q_id+'_answer" id="q'+q_id+'_a'+a_i+'" data-qid="'+q_id+'" data-score="'+ a_val.score +'">');
@@ -80,18 +89,27 @@ function generateQuestions(){
 
 }
 
+var totalScore = 0;
+var arr_answers = [];
 
 $(document).on('change', '.trigger-answer', function() {
     
     var cur_q_id = current_question_no;
     var next_q_id = cur_q_id + 1;
     current_question_no = next_q_id;
-
+    
+    totalScore += $(this).data('score');
+    
+    console.log(totalScore);
+    arr_answers.push($(this).data('score'));
     if(current_question_no > total_no_of_question ){
-        sessionStorage.setItem('toi_profile','ultra_concervative');
+        sessionStorage.setItem('answers',JSON.stringify(arr_answers));
+        sessionStorage.setItem('total_score',totalScore);
         window.location.href = "results.html";
         return false;
     }
+
+    
 
     $(this).parents('.question-item').removeClass('active');
     $('.question-item[data-id=' + next_q_id + ']').addClass('active');
@@ -106,19 +124,40 @@ $(document).on('change', '.trigger-answer', function() {
 
 
 
-var initTimer;
+function getTypeOfInvestor(score){
 
-function timer(){
+    $.getJSON('json/questions.json', function(data) {  
+        $.each(data.score, function(i, val) {
+           
+            if(score >= val.min && score <= val.max){
+                console.log(val.min, val.max, score);
+                $('.dynamic-image').html('<source media="(max-width: 650px)" srcset="images/results/' + val.image_filename + '-mob.png"><img src="images/results/' + val.image_filename + '.png" class="img-fluid" />');
+                $('.dynamic-type-name').html('You are an <br class="d-block d-lg-none" /><strong>' + val.type + '</strong>');
+                $('.dynamic-description').html(val.description);
+                console.log(val.description);
+                
+            }
+        })
+    })
 
-    var currentTImer = $('.timer-wrapper').html();
-    if(currentTImer.length > 0){
-        $('.timer-wrapper').html(currentTImer.slice(0, currentTImer.length - 1));
-    }
-    else{
-        clearInterval(initTimer);
-        window.location.href = "results.html";
-        return false;
-    }
+
+}
+
+
+
+// var initTimer;
+
+// function timer(){
+
+//     var currentTImer = $('.timer-wrapper').html();
+//     if(currentTImer.length > 0){
+//         $('.timer-wrapper').html(currentTImer.slice(0, currentTImer.length - 1));
+//     }
+//     else{
+//         clearInterval(initTimer);
+//         window.location.href = "results.html";
+//         return false;
+//     }
 
     
-}
+// }

@@ -1,5 +1,5 @@
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   width: 100%;
 }
 
@@ -9,22 +9,23 @@ main{
   background-size: cover;
   width: 100%;
   color: #ffffff;
-  padding-top: 30px;
+  padding-top: 20px;
 
 }
 
 header{
-    justify-content: center;
+    /* justify-content: center;
     flex-wrap: wrap;
-    display: flex;
+    display: flex; */
+    padding: 5px 15px;
 }
 
-.uob-logo img{
-  height: 66px;
+.uob-logo{
+  height: 40px;
 }
 
-.right-by-you img{
-  height: 66px;
+.right-by-you{
+  height: 45px;
 }
 
 .container-fluid{
@@ -32,7 +33,7 @@ header{
 }
 
 .main-wrapper{
-  padding: 50px 50px 0;  
+  padding: 15px 50px 0;  
   height: calc(100vh - 230px);
   min-height: 800px;
 }
@@ -44,9 +45,42 @@ header{
 .headline-text{
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 41px;
   letter-spacing: -0.02em;
+  
+}
+
+.nav-menu{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-family: 'Noto Sans', sans-serif;
+  margin-right: 15px;
+  letter-spacing: -0.02em;
+}
+
+.nav-menu li{
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 0;
+}
+.nav-menu li:first-child{
+  padding-left: 0px;
+}
+.nav-menu li:last-child{
+  padding-right: 0px;
+  border-right:0;
+}
+
+.nav-menu li a{
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav-menu li a.active, .nav-menu li a:hover{
+  text-decoration: underline;
 }
 
 .cta-wrapper{
@@ -62,7 +96,7 @@ header{
 }
 
 .btn-default{
-  background: #002469;
+  background: transparent;
   border: 4px solid #FFFFFF;
   border-radius: 15px;
   height: 100px;
@@ -76,14 +110,15 @@ header{
 }
 
 a.btn-default {
-  background: #002469;
+  background: transparent;
   border: 4px solid #FFFFFF;
   border-radius: 15px;
   height: auto;
   padding: 45px 0px;
   width: 320px;
+  max-width: 100%;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 2rem;
   line-height: 0px;
   text-align: center;
   letter-spacing: -0.02em;
@@ -94,13 +129,13 @@ a.btn-default {
 
 .btn-default:hover{
   background: #ffffff;
-  border: 4px solid #002469;
-  color: #002469;
+  border: 4px solid #005CB9;
+  color: #005CB9;
 }
 
 footer{
-  background: #A9A8A9; 
-  padding: 30px;
+  background: #ffffff; 
+  padding: 15px 30px 0;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -112,6 +147,7 @@ footer p{
 footer ul{
   list-style: none;
   padding-left: 0;
+  margin-bottom: 5px;
 }
 footer ul li{
   display: inline-block;
@@ -155,7 +191,7 @@ footer a:hover{
 }
 
 .questions-answers-selection li{
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .questions-answers-selection li .form-check-input[type=radio]{
@@ -195,10 +231,16 @@ footer a:hover{
 }
 
 .results-description-wrapper{
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
   padding: 35px 35px;
+  color: #000000;
+  border-radius: 40px;
 }
 
+.results-description-wrapper h4{
+  font-size: 31px;
+  color: #005CB9;
+}
 
 .results-description-wrapper ul{
   list-style: none;
@@ -221,7 +263,7 @@ footer a:hover{
 }
 
 a.btn-medium{
-  background: #002469;
+  background: #005CB9;
   border: 4px solid #FFFFFF;
   border-radius: 15px;
   height: auto;
@@ -237,7 +279,47 @@ a.btn-medium{
   text-decoration: none;
 }
 
+.menu-item-text{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+}
 
+.txt-mailing-list{
+  width: 100%;
+  border: 0px;
+  background: transparent;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+  line-height: 33px;
+  border-color: #ffffff;
+  font-weight: 300;
+}
+
+.txt-mailing-list::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+  font-weight: 300;
+}
+
+.txt-mailing-list:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.txt-mailing-list::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.right-desktop-spacer{
+  padding-right: 0px;
+}
+@media (max-width: 1361px) {
+  .right-desktop-spacer{
+    padding-right: 0px;
+  } 
+}
 @media (max-width: 1500px) {
   .main-wrapper{
     padding: 0px 0px 0px;  
@@ -262,7 +344,7 @@ a.btn-medium{
       line-height: 33px;
   }  
   .questions-answers-selection li {
-      margin-bottom: 14px;
+      margin-bottom: 10px;
   }  
 
 }
@@ -277,21 +359,42 @@ a.btn-medium{
   display: none;
 }
 
+.question-icon img{
+  width: 80%;
+}
+
 @media (max-width: 990px) {
+
   header{
     position: relative;
   }
+
+  .question-icon img{
+    width: auto;
+  }
+
+  .logo-wrapper{
+    text-align: left !important;
+    align-items: flex-start!important;
+    
+  }
+
+  .logo-wrapper img{
+    max-width: 280px;
+    height: auto;
+  }
+  
   .mob-nav{
     display:inline-block;
     position: absolute;
-    top:0px;
+    top:15px;
     right:5px;
   }
   .mob-nav-wrapper{
     
   }
   .mob-nav .trigger-nav{
-    color: #ffffff;
+    color: #005CB9;
     font-size: 50px;
     text-decoration: none;
     line-height: 40px;
@@ -306,13 +409,17 @@ a.btn-medium{
   .mob-nav-wrapper.active{
     display: block;
     position: absolute;
-    top:80px;
+    top: 80px;
     width: 100%;
     text-align: center;
-    height: calc(100vh - 120px);
+    margin-left: -15px;
+    height: calc(100vh - 60px);
     padding: 25px 0;
-    background-color: rgba(0, 36, 105, 1);
+    background: url(../images/bg-mob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow-y: scroll;
+    z-index: 999;
   }
 
   .mob-nav-item{
@@ -320,7 +427,7 @@ a.btn-medium{
     margin-bottom: 25px;
   }
   .mob-nav-item .item-trigger{
-    font-weight: 700;
+    font-weight: 300;
     font-size: 31px;
     line-height: 42px;
     text-align: center;
@@ -386,13 +493,52 @@ a.btn-medium{
     font-size: 35px;
     margin: 0 auto;
   }
+  .btn-wide, a.btn-wide {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    height: auto;
+    padding: 25px 0px;
+    width: 100%;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 0px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+  }  
 }
 
 @media (max-width: 650px) {
+  main{
+    min-height: calc(100vh - 50px);
+  }
   header{
-    justify-content: start;
+    /* justify-content: start;
     flex-wrap: wrap;
-    display: flex;
+    display: flex; */
+  }
+  .results-description-wrapper{
+    text-align: center;
+  }
+  .results-description-wrapper .btn-medium{
+    margin: 0 auto;
+  }
+  .results-description-wrapper h4{
+    text-align: center;
+  }
+
+  .logo-wrapper{
+    text-align: left !important;
+    align-items: flex-start!important;
+    max-width: 260px;
+  }
+
+  .logo-wrapper img{
+    max-width: 260px;
   }
 
   .uob-logo img{
@@ -443,7 +589,7 @@ a.btn-medium{
   }  
 
   .mob-nav-item .item-trigger {
-      font-weight: 700;
+      font-weight: 300;
       font-size: 24px;
       line-height: 30px;
       text-align: center;
@@ -451,25 +597,35 @@ a.btn-medium{
       color: #ffffff;
       text-decoration: none;
   }
+  
+  .mob-nav-item .item-trigger.active{
+    font-weight: 700;
+  }
+
   .mob-nav-item .item-content.active{
     padding: 0 15px;
+  
   }
   .mob-nav-wrapper.active{
-    height: calc(100vh - 120px);
+    height: calc(100vh - 60px);
   }
 
   .text-question{
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 28px;
     letter-spacing: -0.02em;
     color: #FFFFFF;  
   }
-    
+  
+  .questions-answers-selection li{
+    margin-bottom: 20px;
+  }
+
   .questions-answers-selection li label{
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 18px;
+    line-height: 24px;
   }
   
 

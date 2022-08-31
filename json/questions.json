@@ -1,4 +1,41 @@
 {
+  "score":[
+    {
+      "type": "Ultra Conservative",
+      "image_filename":"Ultra-Conservative",
+      "description":"You are more interested in keeping your money instead of growing it. While you may be satisfied with little returns on your investments, remember that this might make you more vulnerable to the impacts of inflation. <br /><br />Get more in-depth investment advice based on your persona today!",
+      "min": 1,
+      "max": 17
+    },
+    {
+      "type": "Passive Preserver",
+      "image_filename":"Passive-Preserver",
+      "description": "You have a relaxed and stress-free approach with your investments. Financial security and wealth preservation are your top priorities so you tend to be more passive with building your portfolio. Be mindful not to let your investments go stagnant and at risk of loss due to inflation.<br /><br />Get more in-depth investment advice based on your persona today!",
+      "min": 18,
+      "max": 29
+    },
+    {
+      "type": "Friendly Follower",
+      "image_filename":"Friendly-Follower",
+      "description": "You are largely influenced by your peers when it comes to investment decisions. Without much personal thought and input into your portfolio, you may not be aware of your true financial potential and how to achieve it.<br /><br />Get more in-depth investment advice based on your persona today!",
+      "min": 30,
+      "max": 41
+    },
+    {
+      "type": "Independent Individualist",
+      "image_filename":"Independent-Individualist",
+      "description": "You have a hands-on approach your investments. You listen to your instincts and closely manage your portfolio.Take note to regularly evaluate your risk levels and stay focused on your long-term goals!<br /><br />Get more in-depth investment advice based on your persona today!",
+      "min": 42,
+      "max": 53
+    },
+    {
+      "type": "Active Accumulator",
+      "image_filename":"Active-Accumulator",
+      "description": "You take an active approach to building your portfolio and accumulating wealth. You’re an early adopter, willing to explore every new investment opportunity. Try not to let your adventurous spirit get the best of you by regularly evaluating your risk and horizon profile.<br /><br />Get more in-depth investment advice based on your persona today!",
+      "min": 54,
+      "max": 65
+    }
+  ],
   "question": [
     {
       "key": "1",
@@ -255,13 +292,13 @@
     },  
     {
       "key": "10",
-      "question": "[Time Horizon] How quickly do you want to see results from your investments?",
+      "question": "How quickly do you want to see results from your investments?",
       "icon":"images/questions/q10_buddy.svg",
       "image":"images/questions/q10_banner.png",
       "answers": [
         {
           "score": "1",
-          "value": "Hopefully as soon as possible… otherwise I’ll get very stressed!"
+          "value": "It depends on how my plan plays out - I should be covered either way."
         },
         {
           "score": "2",
@@ -280,6 +317,54 @@
           "value": "It doesn’t matter much - I’m in this for the long term!"
         }                                
       ]
-    }                           
+    },  
+    {
+      "key": "11",
+      "question": "What are your current financial concerns?",
+      "icon":"images/questions/q11_buddy.svg",
+      "image":"images/questions/q11_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "Concerned about not able to meet future financial / retirement needs due to inflation"
+        },
+        {
+          "score": "2",
+          "value": "Overspending and can’t seem to get out of debt"
+        },
+        {
+          "score": "3",
+          "value": "Never have to worry about money…what do you think?"
+        }                                
+      ]
+    },
+    {
+      "key": "12",
+      "question": "What is your own perceived risk profile?",
+      "icon":"images/questions/q12_buddy.svg",
+      "image":"images/questions/q12_banner.png",
+      "answers": [
+        {
+          "score": "1",
+          "value": "Very conservative"
+        },
+        {
+          "score": "2",
+          "value": "Conservative"
+        },
+        {
+          "score": "3",
+          "value": "Neutral"
+        },
+        {
+          "score": "4",
+          "value": "Aggressive"
+        },
+        {
+          "score": "5",
+          "value": "Very aggressive"
+        }                                
+      ]
+    }    
   ]
 }

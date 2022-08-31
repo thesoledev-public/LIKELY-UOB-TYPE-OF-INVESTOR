@@ -1,1 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/Noto_Sans/NotoSans-Light.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Noto_Sans/NotoSans-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/Noto_Sans/NotoSans-ExtraBold.ttf) format('truetype');
+  }
+  
+ @font-face {
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/Noto_Sans/NotoSans-LightItalic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Noto_Sans/NotoSans-Italic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Noto Sans';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/Noto_Sans/NotoSans-ExtraBoldItalic.ttf) format('truetype');
+  }
