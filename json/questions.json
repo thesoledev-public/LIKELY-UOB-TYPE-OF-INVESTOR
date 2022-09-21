@@ -1,37 +1,37 @@
 {
   "score":[
     {
-      "type": "Ultra Conservative",
+      "type": "Conscious Conservative",
       "image_filename":"Ultra-Conservative",
-      "description":"You are more interested in keeping your money instead of growing it. While you may be satisfied with little returns on your investments, remember that this might make you more vulnerable to the impacts of inflation. <br /><br />Get more in-depth investment advice based on your persona today!",
+      "description":"You are more interested in keeping your money instead of growing it. While you may be satisfied with little returns on your investments, remember that this may make you more vulnerable to the impacts of inflation. <br /><br />Interested in the in-depth analysis of your investing persona?",
       "min": 1,
       "max": 17
     },
     {
       "type": "Passive Preserver",
       "image_filename":"Passive-Preserver",
-      "description": "You have a relaxed and stress-free approach with your investments. Financial security and wealth preservation are your top priorities so you tend to be more passive with building your portfolio. Be mindful not to let your investments go stagnant and at risk of loss due to inflation.<br /><br />Get more in-depth investment advice based on your persona today!",
+      "description": "You have a relaxed and stress-free approach towards your investments. Financial security and wealth preservation are your top priorities so you tend to be more passive when building your portfolio. Be mindful not to let your investments go stagnant and at risk of loss due to inflation.<br /><br /> Interested in the in-depth analysis of your investing persona?",
       "min": 18,
       "max": 29
     },
     {
       "type": "Friendly Follower",
       "image_filename":"Friendly-Follower",
-      "description": "You are largely influenced by your peers when it comes to investment decisions. Without much personal thought and input into your portfolio, you may not be aware of your true financial potential and how to achieve it.<br /><br />Get more in-depth investment advice based on your persona today!",
+      "description": "You are largely influenced by your peers when it comes to investment decisions. Without much input into your portfolio, you may not be aware of your true financial potential and how to achieve it.<br /><br /> Interested in the in-depth analysis of your investing persona?",
       "min": 30,
       "max": 41
     },
     {
       "type": "Independent Individualist",
       "image_filename":"Independent-Individualist",
-      "description": "You have a hands-on approach your investments. You listen to your instincts and closely manage your portfolio.Take note to regularly evaluate your risk levels and stay focused on your long-term goals!<br /><br />Get more in-depth investment advice based on your persona today!",
+      "description": "You have a hands-on approach to investing. You listen to your instincts and closely manage your portfolio. It is easy to get distracted by short-term market movements and detract from your investment plans. <br /><br />Do evaluate  your plans from time to time and stay focused on your long-term goals. ",
       "min": 42,
       "max": 53
     },
     {
       "type": "Active Accumulator",
       "image_filename":"Active-Accumulator",
-      "description": "You take an active approach to building your portfolio and accumulating wealth. You’re an early adopter, willing to explore every new investment opportunity. Try not to let your adventurous spirit get the best of you by regularly evaluating your risk and horizon profile.<br /><br />Get more in-depth investment advice based on your persona today!",
+      "description": "You take an active approach to building your portfolio and accumulating wealth. You are an early adopter and is willing to explore new investment opportunities. <br /><br />Try not to let your adventurous spirit get the better of you by evaluating your risk profile and investment goals from time to time. ",
       "min": 54,
       "max": 65
     }
@@ -45,23 +45,23 @@
       "answers": [
         {
           "score": "1",
-          "value": "Grounded and stable - I’m definitely the least problematic in our group!"
+          "value": "Grounded and stable - I am definitely the least problematic in our group."
         },
         {
           "score": "2",
-          "value": "I’m their go-to friend - they know I’m always there for them!"
+          "value": "I am their go-to friend - they know I am always there for them."
         },
         {
           "score": "3",
-          "value": "I have tried every bubble tea in Singapore!"
+          "value": "Creature of habit - I know what I like and I will stick to my usual routine."
         },
         {
           "score": "4",
-          "value": "Interesting - always up to date with the latest news and events!"
+          "value": "Interesting - always up-to-date with the latest news and trends."
         },
         {
           "score": "5",
-          "value": "Ambitious and determined - I have to-do lists to achieve all my goals!"
+          "value": "Ambitious and determined - I have to-do lists to achieve all my goals."
         }                                
         
       ]
@@ -74,135 +74,135 @@
       "answers": [
         {
           "score": "1",
-          "value": "What holiday? I’d rather buy something tangible or save that money."
+          "value": "Holiday? I would rather spend on something tangible or save the money."
         },
         {
           "score": "2",
-          "value": "Staycations only! No planning. No hassles. And it’s easy on the budget."
+          "value": "I love staycations. No planning, no hassle and most times, easy on the budget."
         },
         {
           "score": "3",
-          "value": "Me, planning? I leave all that with my travel buddies or have the travel agency do all the planning!"
+          "value": "Me, planning? I leave all that with my travel buddies."
         },
         {
           "score": "4",
-          "value": "I research places that interest me - I don’t mind going on my own if others don’t want to!"
+          "value": "I love to take charge - accommodation, places to see and what to eat. I would even go on my own if others do not want to."
         },
         {
           "score": "5",
-          "value": "Traveling is about new experiences, so all my trips must include a new experience. "
+          "value": "I am an experience seeker. Every trip must include a new experience."
         }                                
       ]
     },
     {
       "key": "3",
-      "question": "Time for a beach holiday with friends! How are you spending it?",
+      "question": "You are at a beach holiday with your friends. How are you spending it?",
       "icon":"images/questions/q3_buddy.svg",
       "image":"images/questions/q3_banner.png",
       "answers": [
         {
           "score": "1",
-          "value": "I’m making the most of my hotel room! Getting a tan would be disastrous as I have nothing in my wardrobe that suits a tan."
+          "value": "I am making the most of my hotel room as getting a tan would be disastrous."
         },
         {
           "score": "2",
-          "value": "I’m staying on the beach, reading a book, and ordering my favourite piña colada."
+          "value": "I am staying on the beach with my book and favourite Pina Colada."
         },
         {
           "score": "3",
-          "value": "See where my friends go and just tag along wherever!"
+          "value": "I will go wherever my friends are going."
         },
         {
           "score": "4",
-          "value": "I’ve got my itinerary all planned out. See you later!"
+          "value": "I have got my itinerary all planned out. See you later!"
         },
         {
           "score": "5",
-          "value": "Wow, I’ve never tried Jet Blading! C’mon everybody follow me!"
+          "value": "I have never tried Jet Blading. Let's go! What are we waiting for?"
         }                                
       ]
     },
     {
       "key": "4",
-      "question": "You go to a café, and see a new flavour on the menu: Mala Coffee. Your usual is still on the menu. What will you order?",
+      "question": "You see a new flavour \"Mala Coffee\" at the cafe. What will you order?",
       "icon":"images/questions/q4_buddy.svg",
       "image":"images/questions/q4_banner.png",
       "answers": [
         {
           "score": "1",
-          "value": "Just my usual Long Black coffee - what else? Better safe than sorry!"
+          "value": "Just my usual Latte. It is better to be safe than sorry."
         },
         {
           "score": "2",
-          "value": "The usual - but do I want it hot or cold? Should I get cake? Maybe not…"
+          "value": "My usual - but do I want it hot or cold? Should I get a cake? Maybe not…"
         },
         {
           "score": "3",
-          "value": "Whatever I feel like at the moment - but I’ll get my friend to try out the new flavour!"
+          "value": "Is my friend getting that? I will try it if my friend tries it too."
         },
         {
           "score": "4",
-          "value": "Obviously the Mala Coffee! New is always more interesting."
+          "value": "Mala Coffee, of course! I love to try new flavours."
         },
         {
           "score": "5",
-          "value": "One sec. Let me check the reviews on social media."
+          "value": "Hang on...I might want to try but let me check out the reviews first."
         }                                
       ]
     },
     {
       "key": "5",
-      "question": "It’s Friday night, it’s your turn to pick a dinner place with your friends!",
+      "question": "It is your turn to pick a dinner place with your friends. What would you do?",
       "icon":"images/questions/q5_buddy.svg",
       "image":"images/questions/q5_banner.png",
       "answers": [
         {
           "score": "1",
-          "value": "Cozy at-home dinner - we can do pot luck or get takeaways!"
+          "value": "Cozy at-home dinner - we can do pot luck or get takeaways."
         },
         {
           "score": "2",
-          "value": "Everybody loved the last restaurant we went to - so let’s go there again!"
+          "value": "Everybody loved the last restaurant we went to - so let’s go there again."
         },
         {
           "score": "3",
-          "value": "Ask my colleagues for recommendations - they’ll know better than Google!"
+          "value": "Ask my colleagues for recommendations - they will know better than Google."
         },
         {
           "score": "4",
-          "value": "I already booked the new restaurant in town – it’s one in my wishlist of restaurants we need to try!"
+          "value": "I already booked the new restaurant in town - it is on my restaurant wishlist."
         },
         {
           "score": "5",
-          "value": "Ever tried dining in the dark or molecular cuisines? I’ll make the reservations."
+          "value": "Ever tried dining in the dark or molecular cuisines? I will make the reservations."
         }                                
       ]
     },
     {
       "key": "6",
-      "question": "What’s your ideal mode of transport?",
+      "question": "What is your ideal mode of transport?",
       "icon":"images/questions/q6_buddy.svg",
       "image":"images/questions/q6_banner.png",
       "answers": [
         {
           "score": "1",
-          "value": "Walking or biking if it’s very near, buses or trains if it’s a distance away."
+          "value": "Walking, if it is near and bus or train if it is a distance away."
         },
         {
           "score": "2",
-          "value": "Buses and trains - they’re so reliable!"
+          "value": "Buses and trains - they are the most reliable."
         },
         {
           "score": "3",
-          "value": "Everybody takes Grab these days!"
+          "value": "Everybody takes Grab these days."
         },
         {
           "score": "4",
-          "value": "It depends on what makes sense at the time - I don’t mind walking, public transport, or Grab."
+          "value": "It depends on what makes sense at the moment - I do not mind walking, public transport, or taking the Segway."
         },
         {
           "score": "5",
-          "value": "A car is so much more efficient to get around!"
+          "value": "A car is so much faster and more convenient to get around."
         }                                
       ]
     },
@@ -214,35 +214,35 @@
       "answers": [
         {
           "score": "1",
-          "value": "Checking with my family who has an extra phone while I research the best phone in the market."
+          "value": "Let's see who has a spare phone while I research for the best phone in the market."
         },
         {
           "score": "2",
-          "value": "I’ll just get the exact same one - no stress!"
+          "value": "I will just get the exact same one - no stress."
         },
         {
           "score": "3",
-          "value": "There’s this new model that everybody wants - so I want it too!"
+          "value": "There is this new model that everybody wants - so I want it too!"
         },
         {
           "score": "4",
-          "value": "I need to do more research - but definitely not going for the obvious choices."
+          "value": "I need to do more research - but I am definitely not going for the obvious choices."
         },
         {
           "score": "5",
-          "value": "Last year's model is cheaper and I can get a $100 credit for my broken phone. Sold."
+          "value": "Definitely the latest model. It will have a higher resale value."
         }                                
       ]
     },
     {
       "key": "8",
-      "question": "Your boss just gave you the day off (paid!). How will you spend it?",
+      "question": "Your boss just gave you the day off. How will you spend it?",
       "icon":"images/questions/q8_buddy.svg",
       "image":"images/questions/q8_banner.png",
       "answers": [
         {
           "score": "1",
-          "value": "At home - catching up on all my Netflix and Youtube shows."
+          "value": "This is my chance to catch up on all my favourite dramas and movies that I have missed."
         },
         {
           "score": "2",
@@ -250,121 +250,101 @@
         },
         {
           "score": "3",
-          "value": "Meeting up with my friends - different ones for breakfast, lunch, and dinner!"
+          "value": "Meeting up with my friends - different friends for breakfast, lunch, and dinner."
         },
         {
           "score": "4",
-          "value": "Attending an event, visiting that exhibit I always wanted to, and just enjoying me-time."
+          "value": "It is me-time! I have always wanted to spend the whole day at the art gallery."
         },
         {
           "score": "5",
-          "value": "I’ve got quite a lot of errands - so I need to check them off my list!"
+          "value": "Let me start checking off my to-dolist."
         }                                
       ]
     },  
     {
       "key": "9",
-      "question": "When it comes to investing money, which of these are you most likely to do?",
+      "question": "You received S$800 cash for your birthday. What would you do with the money?",
       "icon":"images/questions/q9_buddy.svg",
       "image":"images/questions/q9_banner.png",
       "answers": [
         {
           "score": "1",
-          "value": "Investing? I don’t know… I’m quite happy growing my savings account."
+          "value": "Put it into my savings account."
         },
         {
           "score": "2",
-          "value": "Keep my money in low-risk asset with slow but steady growth."
+          "value": "Make this money work harder for me by putting it into my investment portfolio."
         },
         {
           "score": "3",
-          "value": "Take the advice of my friends or see what investment strategies are trending…"
+          "value": "Take my friends out for dinner and get suggestions for a present I long deserve."
         },
         {
           "score": "4",
-          "value": "Do a lot of research, cross-reference sources, and create a solid plan for my own needs."
+          "value": "Split it into three: one for emergency fund, another to treat myself, and lastly into my regular savings plan."
         },
         {
           "score": "5",
-          "value": "Research and buy undervalued investments that has great potential in the future that no one else is talking about yet."
+          "value": "Buy undervalued investments that has great potential in the future that no one else is talking about yet."
         }                                
       ]
     },  
     {
       "key": "10",
-      "question": "How quickly do you want to see results from your investments?",
+      "question": "You just started going to the gym. How soon do you expect to see results?",
       "icon":"images/questions/q10_buddy.svg",
       "image":"images/questions/q10_banner.png",
       "answers": [
         {
           "score": "1",
-          "value": "It depends on how my plan plays out - I should be covered either way."
+          "value": "Since I am not going regularly, perhaps 1-3 years?"
         },
         {
           "score": "2",
-          "value": "I would only put a small amount in secure funds, so perhaps 1-3 years?"
+          "value": "Hopefully as soon as possible - otherwise I will quickly lose motivation."
         },
         {
           "score": "3",
-          "value": "I’m not sure - my friends have all had different results!"
+          "value": "I am not sure - I joined the gym so that I can workout with my friends."
         },
         {
           "score": "4",
-          "value": "It depends on how my plan plays out - I should be covered either way."
+          "value": "I have a strict gym plan, which shows different progression stages and key milestones, so i know exactly what results to get at which point."
         },
         {
           "score": "5",
-          "value": "It doesn’t matter much - I’m in this for the long term!"
+          "value": "It does not matter much - I am in this for the long term."
         }                                
       ]
     },  
     {
       "key": "11",
-      "question": "What are your current financial concerns?",
+      "question": "What type of car do you prefer?",
       "icon":"images/questions/q11_buddy.svg",
       "image":"images/questions/q11_banner.png",
       "answers": [
         {
           "score": "1",
-          "value": "Concerned about not able to meet future financial / retirement needs due to inflation"
+          "value": "Nothing fancy. Just need to get me from one point to another safely."
         },
         {
           "score": "2",
-          "value": "Overspending and can’t seem to get out of debt"
+          "value": "Nothing too fancy, just needs to be efficient in consuming petrol."
         },
         {
           "score": "3",
-          "value": "Never have to worry about money…what do you think?"
-        }                                
-      ]
-    },
-    {
-      "key": "12",
-      "question": "What is your own perceived risk profile?",
-      "icon":"images/questions/q12_buddy.svg",
-      "image":"images/questions/q12_banner.png",
-      "answers": [
-        {
-          "score": "1",
-          "value": "Very conservative"
-        },
-        {
-          "score": "2",
-          "value": "Conservative"
-        },
-        {
-          "score": "3",
-          "value": "Neutral"
+          "value": "My friends all have the same model of car, so I want that as well."
         },
         {
           "score": "4",
-          "value": "Aggressive"
+          "value": "The latest model with all the best features."
         },
         {
           "score": "5",
-          "value": "Very aggressive"
-        }                                
+          "value": "Definitely a fast car. I am in for torque and horsepower."
+        } 
       ]
-    }    
+    }  
   ]
 }

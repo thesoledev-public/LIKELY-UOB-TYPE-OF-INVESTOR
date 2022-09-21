@@ -2,12 +2,11 @@ var total_no_of_question = 0;
 var current_question_no = 0;
 
 var toi_profile = '';
+var arr_per_q_score = [];
 
 if (sessionStorage.getItem('toi_profile') != null) {
     toi_profile = sessionStorage.getItem('toi_profile');
 }
-
-
 
 $(document).on('click', '.trigger-nav', function() {
     $(this).toggleClass('active');
@@ -64,7 +63,7 @@ function generateQuestions(){
                     $.each(shuffled_answers, function(a_i, a_val) {
                         arr_str.push('<li>');
                         arr_str.push('<div class="form-check">');
-                            arr_str.push('<input class="form-check-input trigger-answer" type="radio" name="q'+q_id+'_answer" id="q'+q_id+'_a'+a_i+'" data-qid="'+q_id+'" data-score="'+ a_val.score +'">');
+                            arr_str.push('<input class="form-check-input " type="radio" name="q'+q_id+'_answer" id="q'+q_id+'_a'+a_i+'" data-qid="'+q_id+'" data-score="'+ a_val.score +'">');
                             arr_str.push('<label class="form-check-label" for="q'+q_id+'_a'+a_i+'">');
                             arr_str.push(a_val.value);
                             arr_str.push('</label>');
@@ -92,26 +91,38 @@ function generateQuestions(){
 var totalScore = 0;
 var arr_answers = [];
 
-$(document).on('change', '.trigger-answer', function() {
+$(document).on('click', '.trigger-next', function(e) {
+    e.preventDefault();
+    var cur_q_id = current_question_no;
+
+    if(!$("input[name='q"+cur_q_id+"_answer']").is(':checked')){
+        alert('Please select your answer.');
+        return;
+    }
+
+    var selected_elem = $("input[name='q"+cur_q_id+"_answer']:checked");
     
     var cur_q_id = current_question_no;
     var next_q_id = cur_q_id + 1;
     current_question_no = next_q_id;
     
-    totalScore += $(this).data('score');
     
+    arr_per_q_score[cur_q_id-1] = selected_elem.data('score');
+    console.log(arr_per_q_score);
+    totalScore = arr_per_q_score.reduce((partialSum, a) => partialSum + a, 0);
+
+
     console.log(totalScore);
-    arr_answers.push($(this).data('score'));
+    arr_answers.push(selected_elem.data('score'));
     if(current_question_no > total_no_of_question ){
-        sessionStorage.setItem('answers',JSON.stringify(arr_answers));
+        sessionStorage.setItem('answers',JSON.stringify(arr_per_q_score));
         sessionStorage.setItem('total_score',totalScore);
         window.location.href = "results.html";
         return false;
     }
+   
 
-    
-
-    $(this).parents('.question-item').removeClass('active');
+    $("input[name='q"+cur_q_id+"_answer']").parents('.question-item').removeClass('active');
     $('.question-item[data-id=' + next_q_id + ']').addClass('active');
     
     $('.total_no_of_question').html(total_no_of_question);
@@ -119,6 +130,36 @@ $(document).on('change', '.trigger-answer', function() {
     $('.question_kv > img').attr('src','images/questions/q' + next_q_id + '_banner.png');
     $('.question_kv > source').attr('srcset','images/questions/q' + next_q_id + '_banner-mob.png');
   
+    if(current_question_no < 2){
+        $('.trigger-back').addClass('d-none');
+    }
+    else{
+        $('.trigger-back').removeClass('d-none');
+    }    
+});
+
+
+$(document).on('click', '.trigger-back', function(e) {
+    e.preventDefault();
+    var cur_q_id = current_question_no;
+    var cur_q_id = current_question_no;
+    var prev_q_id = cur_q_id - 1;
+    current_question_no = prev_q_id;
+    
+    $("input[name='q"+cur_q_id+"_answer']").parents('.question-item').removeClass('active');
+
+    $('.question-item[data-id=' + prev_q_id + ']').addClass('active');
+    
+    $('.total_no_of_question').html(total_no_of_question);
+    $('.current_question_no').html(current_question_no);
+    $('.question_kv > img').attr('src','images/questions/q' + prev_q_id + '_banner.png');
+    $('.question_kv > source').attr('srcset','images/questions/q' + prev_q_id + '_banner-mob.png');
+    if(current_question_no < 2){
+        $('.trigger-back').addClass('d-none');
+    }
+    else{
+        $('.trigger-back').removeClass('d-none');
+    }
 });
 
 
@@ -131,7 +172,7 @@ function getTypeOfInvestor(score){
            
             if(score >= val.min && score <= val.max){
                 console.log(val.min, val.max, score);
-                $('.dynamic-image').html('<source media="(max-width: 650px)" srcset="images/results/' + val.image_filename + '-mob.png"><img src="images/results/' + val.image_filename + '.png" class="img-fluid" />');
+                $('.dynamic-image').html('<source media="(max-width: 650px)" srcset="images/results/' + val.image_filename + '-mob.png"><img src="images/results/' + val.image_filename + '.png" class="img-fluid" width="80%" />');
                 $('.dynamic-type-name').html('You are an <br class="d-block d-lg-none" /><strong>' + val.type + '</strong>');
                 $('.dynamic-description').html(val.description);
                 console.log(val.description);
