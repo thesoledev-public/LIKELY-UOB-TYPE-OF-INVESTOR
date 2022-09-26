@@ -167,6 +167,12 @@ $(document).on('click', '.trigger-back', function(e) {
 
 function getTypeOfInvestor(score){
 
+    //?q1=5&q2=1&q3=1&q4=1&q5=5&q6=3&q7=3&q8=1&q9=5&q10=3&q11=4&score=32&type=friendly-follower
+    var arr_answers = JSON.parse(sessionStorage.getItem('answers'));
+    var total_score = JSON.parse(sessionStorage.getItem('total_score'));
+
+    var type_of_investor = '';
+
     $.getJSON('json/questions.json', function(data) {  
         $.each(data.score, function(i, val) {
            
@@ -176,10 +182,24 @@ function getTypeOfInvestor(score){
                 $('.dynamic-type-name').html('You are an <br class="d-block d-lg-none" /><strong>' + val.type + '</strong>');
                 $('.dynamic-description').html(val.description);
                 console.log(val.description);
-                
+                type_of_investor = val.type;
+                type_of_investor = type_of_investor.replace(/\s/g,"-").toLowerCase();
+
+                var queryStr = '?score=' + total_score;
+                var q_no = 1;
+                $.each(arr_answers, function(i, val) {
+                    queryStr = queryStr + '&q'+q_no+'=' + val;
+                    q_no++;
+                });
+            
+                queryStr = queryStr + '&type=' + type_of_investor;
+                // console.log(queryStr);
+                $('.btn-send-report').attr('href','#'+queryStr);
             }
         })
     })
+
+
 
 
 }

@@ -24,14 +24,14 @@
     {
       "type": "Independent Individualist",
       "image_filename":"Independent-Individualist",
-      "description": "You have a hands-on approach to investing. You listen to your instincts and closely manage your portfolio. It is easy to get distracted by short-term market movements and detract from your investment plans. <br /><br />Do evaluate  your plans from time to time and stay focused on your long-term goals. ",
+      "description": "You have a hands-on approach to investing. You listen to your instincts and closely manage your portfolio. It is easy to get distracted by short-term market movements and detract from your investment plans. Do evaluate  your plans from time to time and stay focused on your long-term goals. <br /><br />Interested in the in-depth analysis of your investing persona?",
       "min": 42,
       "max": 53
     },
     {
       "type": "Active Accumulator",
       "image_filename":"Active-Accumulator",
-      "description": "You take an active approach to building your portfolio and accumulating wealth. You are an early adopter and is willing to explore new investment opportunities. <br /><br />Try not to let your adventurous spirit get the better of you by evaluating your risk profile and investment goals from time to time. ",
+      "description": "You take an active approach to building your portfolio and accumulating wealth. You are an early adopter and is willing to explore new investment opportunities. Try not to let your adventurous spirit get the better of you by evaluating your risk profile and investment goals from time to time. <br /><br />Interested in the in-depth analysis of your investing persona?",
       "min": 54,
       "max": 65
     }
@@ -258,7 +258,7 @@
         },
         {
           "score": "5",
-          "value": "Let me start checking off my to-dolist."
+          "value": "Let me start checking off my to-do list."
         }                                
       ]
     },  
@@ -310,7 +310,7 @@
         },
         {
           "score": "4",
-          "value": "I have a strict gym plan, which shows different progression stages and key milestones, so i know exactly what results to get at which point."
+          "value": "I have a strict gym plan, which shows different progression stages and key milestones, so I know exactly what results to get at which point."
         },
         {
           "score": "5",
@@ -320,7 +320,7 @@
     },  
     {
       "key": "11",
-      "question": "What type of car do you prefer?",
+      "question": "What is your preferred car?",
       "icon":"images/questions/q11_buddy.svg",
       "image":"images/questions/q11_banner.png",
       "answers": [

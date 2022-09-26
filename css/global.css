@@ -26,11 +26,11 @@ header{
 }
 
 .uob-logo{
-  height: 50px;
+  /* height: 50px; */
 }
 
 .right-by-you{
-  height: 45px;
+  /* height: 45px; */
 }
 
 .container-fluid{
@@ -451,8 +451,21 @@ a.btn-medium{
   margin-top: 15px;
 }
 
+.table-tasks .odd{
+  background-color: #DDD6FF;
+  padding: 10px;
+}
+.table-tasks .even{
+  background-color: #FFE1CC;
+  padding: 10px;
+}
+
 .table-tasks thead{
   border-bottom: 2px solid #005CB9;
+}
+
+.table-tasks td.lined{
+  border-bottom: 1px solid #005CB9;
 }
 
 .table-tasks thead th{
@@ -480,7 +493,7 @@ a.btn-medium{
 }
 
 .table-invested th{
-  background-color: #5C55EB;
+  background-color: #7872f0;
   color: #ffffff;
   font-weight: 500;
   padding: 5px 0px;
@@ -489,14 +502,17 @@ a.btn-medium{
 
 .table-invested td{
   background-color: #e4deff;
-  color: #5C55EB;
+  color: #7872f0;
   font-weight: 500;
   padding: 5px 0px;
   font-size: 18px;
   line-height: 18px;
 }
 
-
+.draw-label{
+  color: #005CB9;
+  font-weight: 700;
+}
 
 @media (max-width: 1361px) {
   .right-desktop-spacer{
@@ -740,7 +756,7 @@ a.btn-medium{
   }  
 
   .how-to-wrapper ol li {
-      margin-bottom: 15px;
+      /* margin-bottom: 15px; */
       font-size: 18px;
   }  
 
@@ -763,6 +779,18 @@ a.btn-medium{
 }
 
 @media (max-width: 1440px) and (max-height: 975px){
+  hr {
+    margin: 0.2rem 0;
+  }
+  .masthead-responsive{
+    max-width: 70%;
+  }
+  .uob-logo {
+      height: 35px;
+  }  
+  .right-by-you {
+    height: 40px;
+  }  
   .headline-text {
       font-size: 18px;
       line-height: 22px;
@@ -772,6 +800,10 @@ a.btn-medium{
     font-size: 1.3rem;
     line-height: 0px;
   }  
+  .questions-answers-selection li {
+    margin-bottom: 5px;
+  }  
+
   .questions-answers-selection li label {
       font-size: 14px;
       line-height: 18px;
@@ -788,8 +820,13 @@ a.btn-medium{
   }  
   .main-wrapper {
       padding: 0px 0px 0px;
-      min-height: 550px;
+      min-height: 465px;
   }
+  
+  .result-main-wrapper{
+    min-height: 535px;
+  }
+
   a.link-button {
       color: #ffffff;
       text-decoration: none;
@@ -845,6 +882,9 @@ a.btn-medium{
 
 
 @media (max-width: 650px) {
+  .masthead-responsive{
+    max-width: 80%;
+  }
   main{
     min-height: calc(100vh - 70px);
     height: auto;
@@ -965,7 +1005,16 @@ a.btn-medium{
 
 
 }
-
+@media (max-width: 400px) {
+  .headline-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+  }
+  .content-wrapper {
+      padding: 30px 20px;
+  }  
+}
 
 
 
