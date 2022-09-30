@@ -2,6 +2,7 @@
   "score":[
     {
       "type": "Conscious Conservative",
+      "title": "You are a <br class=\"d-block d-lg-none\"/><strong>Conscious Conservative</strong>",
       "image_filename":"Ultra-Conservative",
       "description":"You are more interested in keeping your money instead of growing it. While you may be satisfied with little returns on your investments, remember that this may make you more vulnerable to the impacts of inflation. <br /><br />Interested in the in-depth analysis of your investing persona?",
       "min": 1,
@@ -9,6 +10,7 @@
     },
     {
       "type": "Passive Preserver",
+      "title": "You are a <br class=\"d-block d-lg-none\"/><strong>Passive Preserver</strong>",
       "image_filename":"Passive-Preserver",
       "description": "You have a relaxed and stress-free approach towards your investments. Financial security and wealth preservation are your top priorities so you tend to be more passive when building your portfolio. Be mindful not to let your investments go stagnant and at risk of loss due to inflation.<br /><br /> Interested in the in-depth analysis of your investing persona?",
       "min": 18,
@@ -16,6 +18,7 @@
     },
     {
       "type": "Friendly Follower",
+      "title": "You are a <br class=\"d-block d-lg-none\"/><strong>Friendly Follower</strong>",
       "image_filename":"Friendly-Follower",
       "description": "You are largely influenced by your peers when it comes to investment decisions. Without much input into your portfolio, you may not be aware of your true financial potential and how to achieve it.<br /><br /> Interested in the in-depth analysis of your investing persona?",
       "min": 30,
@@ -23,6 +26,7 @@
     },
     {
       "type": "Independent Individualist",
+      "title": "You are an <br class=\"d-block d-lg-none\"/><strong>Independent Individualist</strong>",
       "image_filename":"Independent-Individualist",
       "description": "You have a hands-on approach to investing. You listen to your instincts and closely manage your portfolio. It is easy to get distracted by short-term market movements and detract from your investment plans. Do evaluate  your plans from time to time and stay focused on your long-term goals. <br /><br />Interested in the in-depth analysis of your investing persona?",
       "min": 42,
@@ -30,6 +34,7 @@
     },
     {
       "type": "Active Accumulator",
+      "title": "You are an <br class=\"d-block d-lg-none\"/><strong>Active Accumulator</strong>",
       "image_filename":"Active-Accumulator",
       "description": "You take an active approach to building your portfolio and accumulating wealth. You are an early adopter and is willing to explore new investment opportunities. Try not to let your adventurous spirit get the better of you by evaluating your risk profile and investment goals from time to time. <br /><br />Interested in the in-depth analysis of your investing persona?",
       "min": 54,

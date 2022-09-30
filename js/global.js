@@ -1,3 +1,5 @@
+const report_url = 'https://u-forms.uob.com.sg/eservices/uobam/investor-type-quiz-contact.html';
+
 var total_no_of_question = 0;
 var current_question_no = 0;
 
@@ -179,7 +181,7 @@ function getTypeOfInvestor(score){
             if(score >= val.min && score <= val.max){
                 console.log(val.min, val.max, score);
                 $('.dynamic-image').html('<source media="(max-width: 650px)" srcset="images/results/' + val.image_filename + '-mob.png"><img src="images/results/' + val.image_filename + '.png" class="img-fluid" width="80%" />');
-                $('.dynamic-type-name').html('You are an <br class="d-block d-lg-none" /><strong>' + val.type + '</strong>');
+                $('.dynamic-type-name').html(val.title);
                 $('.dynamic-description').html(val.description);
                 console.log(val.description);
                 type_of_investor = val.type;
@@ -187,14 +189,18 @@ function getTypeOfInvestor(score){
 
                 var queryStr = '?score=' + total_score;
                 var q_no = 1;
+                queryStr = queryStr + '&qn=';
                 $.each(arr_answers, function(i, val) {
-                    queryStr = queryStr + '&q'+q_no+'=' + val;
+                    if(q_no != 1)
+                        queryStr = queryStr + '_';
+
+                    queryStr = queryStr + q_no+'a' + val;
                     q_no++;
                 });
             
                 queryStr = queryStr + '&type=' + type_of_investor;
                 // console.log(queryStr);
-                $('.btn-send-report').attr('href','#'+queryStr);
+                $('.btn-send-report').attr('href',report_url+queryStr);
             }
         })
     })

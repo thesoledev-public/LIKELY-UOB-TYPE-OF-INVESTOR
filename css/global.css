@@ -50,7 +50,7 @@ header{
 .headline-text{
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 31px;
   letter-spacing: -0.02em;
   
@@ -68,6 +68,7 @@ header{
   font-family: 'Noto Sans', sans-serif;
   margin-right: 15px;
   letter-spacing: -0.02em;
+  z-index: 99999;
 }
 
 .nav-menu li{
@@ -376,16 +377,23 @@ a.btn-medium{
 }
 
 
+.table-app td{
+  padding: 10px;
+}
 
 .how-to-win-header{
   margin-top: 25px;
 }
 
 .how-to-win-header .header-copy{
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   width: 80%;
   margin: 0 auto;
+}
+
+.text-nowrap{
+  white-space: nowrap;
 }
 
 .how-to-win-wrapper{
@@ -526,7 +534,7 @@ a.btn-medium{
   }
 
   .headline-text{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 31px;
   }
   .caption-text{
@@ -563,6 +571,11 @@ a.btn-medium{
 }
 
 @media (max-width: 990px) {
+  
+  .table-app td{
+    padding: 5px;
+  }
+
   .mob-margin-center{
     margin: 0 auto;
   }
