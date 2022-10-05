@@ -201,6 +201,7 @@ function getTypeOfInvestor(score){
                 queryStr = queryStr + '&type=' + type_of_investor;
                 // console.log(queryStr);
                 $('.btn-send-report').attr('href',report_url+queryStr);
+                $('.results-description-wrapper').removeClass('hide');
             }
         })
     })
