@@ -1,4 +1,4 @@
-const report_url = 'https://u-forms.uob.com.sg/eservices/uobam/investor-type-quiz-contact.html';
+const report_url = 'https://forms.uob.com.sg/eservices/uobam/investor-type-quiz-contact.html';
 
 var total_no_of_question = 0;
 var current_question_no = 0;
